@@ -55,28 +55,26 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 200,
               child: Stack(
                 children: <Widget>[
-                  Center(
-                      child: ClipOval(
-                          child: ima != null
-                              ? Image.file(ima,
-                                  width: 200.0, height: 200.0, fit: BoxFit.fill)
-                              : Container(
-                                  decoration:
-                                      BoxDecoration(color: Colors.black),
-                                  width: 200,
-                                  height: 200,
-                                  child: Icon(
-                                    Icons.camera_alt,
-                                    color: Colors.grey[800],
-                                  ),
-                                ))),
+                  ClipOval(
+                      child: ima != null
+                          ? Image.file(ima,
+                              width: 200.0, height: 200.0, fit: BoxFit.fill)
+                          : Container(
+                              decoration: BoxDecoration(color: Colors.black),
+                              width: 200,
+                              height: 200,
+                              child: Icon(
+                                Icons.camera_alt,
+                                color: Colors.grey[800],
+                              ),
+                            )),
                   Container(
                     padding: const EdgeInsets.all(5.0),
                     alignment: Alignment.bottomRight,
                     child: IconButton(
                       icon: const Icon(
                         Icons.add_a_photo_rounded,
-                        color: Colors.white,
+                        color: Colors.deepPurpleAccent,
                         size: 30.0,
                       ),
                       onPressed: () async {
