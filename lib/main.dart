@@ -62,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   width: 200.0, height: 200.0, fit: BoxFit.fill)
                               : Container(
                                   decoration:
-                                      BoxDecoration(color: Colors.red[200]),
+                                      BoxDecoration(color: Colors.black),
                                   width: 200,
                                   height: 200,
                                   child: Icon(
@@ -76,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: IconButton(
                       icon: const Icon(
                         Icons.add_a_photo_rounded,
-                        color: Colors.red,
+                        color: Colors.white,
                         size: 30.0,
                       ),
                       onPressed: () async {
@@ -110,9 +110,6 @@ class _MyHomePageState extends State<MyHomePage> {
             SizedBox(
                 width: 330,
                 child: TextField(
-                    // keyboardType: TextInputType.multiline,
-                    // minLines: 1,
-                    // maxLines: 5,
                     onSubmitted: (value) => abt = value,
                     style: TextStyle(
                         fontSize: 21, height: 0.8, color: Colors.white),
