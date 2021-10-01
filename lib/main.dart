@@ -74,7 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: IconButton(
                       icon: const Icon(
                         Icons.add_a_photo_rounded,
-                        color: Colors.deepPurpleAccent,
+                        color: Colors.pinkAccent,
                         size: 30.0,
                       ),
                       onPressed: () async {
