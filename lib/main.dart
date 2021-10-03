@@ -71,19 +71,22 @@ class _MyHomePageState extends State<MyHomePage> {
                   Container(
                     padding: const EdgeInsets.all(5.0),
                     alignment: Alignment.bottomRight,
-                    child: IconButton(
-                      icon: const Icon(
-                        Icons.add_a_photo_rounded,
-                        color: Colors.pinkAccent,
-                        size: 30.0,
-                      ),
-                      onPressed: () async {
-                        getFile = await i.im();
-                        setState(() {
-                          ima = File(getFile.path);
-                        });
-                      },
-                    ),
+                    child: CircleAvatar(
+                        backgroundColor: Colors.green[900],
+                        child: Center(
+                            child: IconButton(
+                          icon: const Icon(
+                            Icons.camera_alt,
+                            color: Colors.white,
+                            size: 25.0,
+                          ),
+                          onPressed: () async {
+                            getFile = await i.im();
+                            setState(() {
+                              ima = File(getFile.path);
+                            });
+                          },
+                        ))),
                   ),
                 ],
               ),
